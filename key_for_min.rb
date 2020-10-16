@@ -3,10 +3,21 @@
 
 def key_for_min_value(name_hash)
   if name_hash=={}
-    return nil
-    lowest_key=""
-    lowest_value=""
-    
+    return nil #takes care of the empty hash requirement
+    lowest_key=nil #default key
+    lowest_value=nil #default value
+    name_hash.each do |key,value|
+      if lowest_value==nil
+        lowest_key=key
+        lowest_value=value
+      elsif (value<lowest_value)
+        lowest_key=key
+        lowest_value=value
+
+        
+
+
+
   end
 
 end
