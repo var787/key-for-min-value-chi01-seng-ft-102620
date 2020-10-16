@@ -3,7 +3,8 @@
 
 def key_for_min_value(name_hash)
   if name_hash=={}
-    return nil #takes care of the empty hash requirement
+    return nil
+  end#takes care of the empty hash requirement
     lowest_key=nil #default key
     lowest_value=nil #default value
     name_hash.each do |key,value|
@@ -20,5 +21,5 @@ def key_for_min_value(name_hash)
 
 
   end
-
+lowest_key
 end
